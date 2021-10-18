@@ -5,7 +5,6 @@ const fetch = require("isomorphic-fetch");
 
 router.get("/list", async (req, res) => {
   const { search_item, category } = req.query;
-  console.log(search_item)
   try {
     const url = `https://www.flipkart.com/search?q=${search_item}&otracker=search&otracker1=search&marketplace=FLIPKART&suggestionId=${category}`;
     const response = await fetch(url);
@@ -63,8 +62,6 @@ router.get("/list", async (req, res) => {
         productFeaturesArray[i] = productFeatures;
       }
 
-      console.log(giveUserResponse);
-
       giveUserResponse.product.push({
         name: productTitle,
         image: productImg,
@@ -84,7 +81,6 @@ router.get("/list", async (req, res) => {
 // Route 02 :- Get Grid Products Details
 router.get("/grid", async (req, res) => {
   const { search_item } = req.query;
-  console.log(search_item)
   try {
     const url = `https://www.flipkart.com/search?q=${search_item}&otracker=search&otracker1=search&marketplace=FLIPKART`;
     const response = await fetch(url);
@@ -129,9 +125,6 @@ router.get("/grid", async (req, res) => {
       var productRating =
         dom.window.document.getElementsByClassName("_3LWZlK")[index]
           .childNodes[0].textContent;
-
-
-      console.log(giveUserResponse);
 
       giveUserResponse.product.push({
         name: productTitle,
@@ -215,8 +208,6 @@ router.get("/mobiles", async (req, res) => {
         productFeaturesArray[i] = productFeatures;
       }
 
-      console.log(giveUserResponse);
-
       giveUserResponse.product.push({
         name: productTitle,
         image: productImg,
@@ -297,8 +288,6 @@ router.get("/laptops", async (req, res) => {
 
         productFeaturesArray[i] = productFeatures;
       }
-
-      console.log(giveUserResponse);
 
       giveUserResponse.product.push({
         name: productTitle,
