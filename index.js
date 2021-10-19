@@ -10,11 +10,11 @@ const app = express();
 // Using Express JSON Because We Want JSON Input From The Frontend And JSON Output From The Backend
 app.use(express.json());
 
-app.get("/", (req, res) => {
+app.get("/flipkart", (req, res) => {
   res.status(200).send("Flipkart Web Scrapper");
 });
 
-app.use("/search", require("./routes/search.route"));
+app.use("/flipkart/search", require("./routes/flipkart/search.route"));
 
 // Listening The App
 app.listen(PORT, () => {
