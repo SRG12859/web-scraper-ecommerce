@@ -1,5 +1,6 @@
 // Packages
 const express = require("express");
+const cors = require("cors")
 
 // App PORT
 const PORT = process.env.PORT || 8080;
@@ -9,6 +10,9 @@ const app = express();
 
 // Using Express JSON Because We Want JSON Input From The Frontend And JSON Output From The Backend
 app.use(express.json());
+app.use(cors({
+  origin: "*"
+}))
 
 app.get("/flipkart", (req, res) => {
   res.status(200).send("Flipkart Web Scrapper");
