@@ -1,5 +1,5 @@
 {
-  "name": "flipkart-web-scrapper",
+  "name": "web-scrapper",
   "version": "1.0.0",
   "description": "This Api Can Give Product details, search details, rerview",
   "main": "index.js",

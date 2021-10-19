@@ -15,6 +15,7 @@ app.get("/flipkart", (req, res) => {
 });
 
 app.use("/flipkart/search", require("./routes/flipkart/search.route"));
+app.use("/flipkart/product", require("./routes/flipkart/product.route"));
 
 // Listening The App
 app.listen(PORT, () => {
