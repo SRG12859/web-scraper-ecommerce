@@ -9,7 +9,8 @@ router.get("/get-productDetails", async (req, res) => {
     // const url = "https://www.flipkart.com/redmi-9-sky-blue-64-gb/p/itm4fb151383983b"
     // Demo Url :- https://www.flipkart.com/redmi-9-sky-blue-64-gb/p/itm4fb151383983b
     try {
-        const fetchUrl = await fetch(url);
+        const changedUrl = url.replace(/\?(.*)/gi, "")
+        const fetchUrl = await fetch(changedUrl);
         const fetchResult = await fetchUrl.text();
 
         var dom = new JSDOM(fetchResult);
