@@ -1,3 +1,7 @@
+# Readme (IMPORTANT)
+
+Your Own Safety is On Your Hand, I already warned Don't tell me later i did not warned You To Use
+
 # Flipkart-Web-Scraper
 
 This Project is created To Help Every Single People Who Wants To Use Or Get Products From Flipkart
@@ -8,35 +12,10 @@ This Can APi Can help You Creating Like A Flip-kart Clone, Which can Help You Ma
 
 ## Documentation
 ### `/search/mobiles` Route
-  - What you Need To `Query`
-    - a brand name from below (any one)
-        - `realme`
-        - `mi`
-        - `infinix`
-        - `apple`
-        - `vivo`
-        - `asus`
-        - `samsung`
+  - This Url will Give You The List Of Mobile
         
   - The Url Should Look Like This After The Root `/search/mobiles?company=<brand-you-choosen>`
   - The Brand Should Be In `lowercase` and `it should not contain any space in middle, before and after`
-
-### `/search/random-mobile` Route
-  - `Needs`
-    - `No Needs`
-  - `What does it do ?`
-    - It will Give You `Random Mobiles` From Any One Of The `Company` Mentioned in Below.
-    
-        - `realme`
-        - `mi`
-        - `infinix`
-        - `apple`
-        - `vivo`
-        - `asus`
-        - `samsung` 
-
-
-  - The Url Should Look Like This After The Root `/search/random-mobile`
 
 ### `/product/get-productDetails` Route
   - `Needs`
