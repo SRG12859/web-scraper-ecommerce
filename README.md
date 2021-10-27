@@ -1,6 +1,6 @@
 # Readme (IMPORTANT)
 
-Your Own Safety is On Your Hand, I already warned Don't tell me later i did not warned You To Use
+Your Own Safety is On Your Hand To Use It, I already warned Don't tell me later i did not warned You To Use
 
 # Flipkart-Web-Scraper
 
